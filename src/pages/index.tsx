@@ -1,9 +1,10 @@
 import ProductCard from '../components/ProductCard';
 import styles from '../styles/Home.module.css';
 import { useEffect, useState } from "react";
+import { IProduct } from "../types";
 
-export default function Home() {
-    const [products, setProducts] = useState([]);
+export default function Home(): JSX.Element {
+    const [products, setProducts] = useState<IProduct[]>([]);
 
     useEffect(() => {
         fetch('http://localhost:3001/api/products')

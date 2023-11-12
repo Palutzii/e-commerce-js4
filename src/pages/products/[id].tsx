@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import { IProduct } from "../../types";
 
-export default function ProductDetails() {
-    const [product, setProduct] = useState(null);
+export default function ProductDetails(): JSX.Element {
+    const [product, setProduct] = useState<IProduct | null>(null);
     const router = useRouter();
     const { id } = router.query;
 
     useEffect(() => {
-        if (id) {
+        if (typeof id === 'string') {
             fetch(`http://localhost:3001/api/products/${id}`)
                     .then(res => res.json())
                     .then(data => setProduct(data))

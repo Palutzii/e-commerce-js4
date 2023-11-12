@@ -1,4 +1,11 @@
-const products = [
+export interface Product {
+    id: string;
+    name: string;
+    price: number;
+    description: string;
+    stock: number;
+}
+export const products: Product[] = [
     {
         id: '1',
         name: 'Christmas Lights',
@@ -71,5 +78,3 @@ const products = [
     },
 
 ];
-
-module.exports = products;
