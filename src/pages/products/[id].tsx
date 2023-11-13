@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { IProduct } from "../../types";
+import styles from '../../styles/ProductDetails.module.css';
 
 export default function ProductDetails(): JSX.Element {
     const [product, setProduct] = useState<IProduct | null>(null);
@@ -22,6 +23,7 @@ export default function ProductDetails(): JSX.Element {
 
     return (
             <div>
+                <img src={product.imageUrl} alt={product.name} className={styles.productDetailsImage}/>
                 <h1>{product.name}</h1>
                 <p>{product.description}</p>
                 <p>{product.price}€</p>

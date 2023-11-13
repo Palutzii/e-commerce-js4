@@ -1,0 +1,48 @@
+/* Cart.module.css */
+.cartPanel {
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    right: 0;
+    top: 6rem;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    z-index: 10;
+    color: #333333;
+}
+
+.cartPanel h2 {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cartPanelItem {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartPanelItemInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartPanelItemBtnContainer {
+    display: flex;
+}
+
+.cartPanelTotal {
+    padding: 1rem;
+    text-align: right;
+    font-weight: bold;
+}
+
+.cartItemImage {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}

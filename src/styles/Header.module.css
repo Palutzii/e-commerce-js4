@@ -18,3 +18,23 @@
     text-decoration: none;
     margin-left: 2rem;
 }
+
+.cartIconContainer {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.cartBadge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #FF4136;
+    color: white;
+    border-radius: 50%;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    min-width: 20px;
+    text-align: center;
+    font-weight: bold;
+}

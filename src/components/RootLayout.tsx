@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Head from "next/head";
+import styles from '../styles/Root.module.css'
 
 export default function RootLayout({ children }) {
     return (
@@ -9,7 +10,7 @@ export default function RootLayout({ children }) {
                     <title>My page title</title>
                 </Head>
                 <Header />
-                <main>{children}</main>
+                <main className={styles.pageWrapper}>{children}</main>
                 <Footer />
             </>
     );
