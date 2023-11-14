@@ -1,4 +1,3 @@
-// src/CartContext.tsx
 import React, { createContext, useContext, useState } from 'react';
 import { IProduct } from './types';
 
@@ -24,7 +23,7 @@ export const useCart = () => {
     return context;
 };
 
-export const CartProvider: React.FC = ({ children }) => {
+export const CartProvider: React.FC<{ children: React.ReactNode}> = ({ children }) => {
     const [items, setItems] = useState<CartItem[]>([]);
 
     const addToCart = (product: IProduct) => {
@@ -59,7 +58,7 @@ export const CartProvider: React.FC = ({ children }) => {
     };
 
     const removeFromCart = (productId: string) => {
-        setItems((previtems) => previtems.filter((item) => item.id !== productId));
+        setItems((prevItems) => prevItems.filter((item) => item.id !== productId));
     };
 
     return (
