@@ -87,5 +87,117 @@ export const products: Product[] = [
         stock: 80,
         imageUrl: "/dyi.png"
     },
+    {
+        id: "11",
+        name: "Sparkling Star Topper",
+        price: 24.99,
+        description: "A dazzling star-shaped tree topper adorned with reflective crystals and LED lighting to create a magical glow atop your Christmas tree.",
+        stock: 150,
+        imageUrl: "/xmas-star.png"
+    },
+    {
+        id: "12",
+        name: "Festive Countdown Calendar",
+        price: 18.50,
+        description: "A charming advent calendar featuring tiny pockets for each day, perfect for hiding small treats and notes as you count down to Christmas.",
+        stock: 200,
+        imageUrl: "/xmas-calendar.png"
+    },
+    {
+        id: "13",
+        name: "Glittering Snow Globe",
+        price: 35.00,
+        description: "A beautiful, handcrafted snow globe with a winter village scene, swirling with glitter when shaken, encapsulating the spirit of the holidays.",
+        stock: 120,
+        imageUrl: "/snow-globe.png"
+    },
+    {
+        id: "14",
+        name: "New Year's Eve Party Pack",
+        price: 29.99,
+        description: "A comprehensive party pack including hats, noisemakers, and confetti poppers to ring in the New Year with a bang.",
+        stock: 250,
+        imageUrl: "/eve-pack.png"
+    },
+    {
+        id: "15",
+        name: "Winter Wonderland Backdrop",
+        price: 15.99,
+        description: "A large, festive backdrop depicting a snowy winter scene, perfect for holiday photos and decoration.",
+        stock: 100,
+        imageUrl: "/xmas-backdrop.png"
+    },
+    {
+        id: "16",
+        name: "Gourmet Hot Chocolate Kit",
+        price: 22.50,
+        description: "A deluxe hot chocolate kit with premium cocoa, marshmallows, and peppermint sticks for cozy holiday evenings.",
+        stock: 180,
+        imageUrl: "/choco.png"
+    },
+    {
+        id: "17",
+        name: "Festive Door Mat",
+        price: 19.99,
+        description: "A durable and cheerful door mat with a holiday motif to welcome guests during the festive season.",
+        stock: 160,
+        imageUrl: "/door-mat.png"
+    },
+    {
+        id: "18",
+        name: "Holiday Spice Potpourri",
+        price: 13.50,
+        description: "A fragrant blend of holiday spices and dried fruits to fill your home with the scents of the season.",
+        stock: 200,
+        imageUrl: "/spice.png"
+    },
+    {
+        id: "19",
+        name: "Velvet Stocking Collection",
+        price: 28.00,
+        description: "Luxurious velvet stockings available in various festive colors, perfect for hanging by the fireplace.",
+        stock: 300,
+        imageUrl: "/stocking.png"
+    },
+    {
+        id: "20",
+        name: "Jolly Santa Figurine",
+        price: 32.99,
+        description: "A charming and detailed figurine of Santa Claus, bringing a classic touch to your holiday decor.",
+        stock: 90,
+        imageUrl: "/santa.png"
+    },
+    {
+        id: "21",
+        name: "Crystal Ice Cycle Ornaments",
+        price: 14.99,
+        description: "Elegant, crystal-like icicle ornaments that add a touch of winter wonder to any tree.",
+        stock: 250,
+        imageUrl: "/crystal.png"
+    },
+    {
+        id: "22",
+        name: "Midnight Fireworks Kit",
+        price: 49.99,
+        description: "A safe and dazzling fireworks kit to light up the night sky on New Year's Eve.",
+        stock: 75,
+        imageUrl: "/fire.png"
+    },
+    {
+        id: "23",
+        name: "Holiday Plush Blanket",
+        price: 29.99,
+        description: "A soft, warm blanket with a festive design, perfect for snuggling up during cold winter nights.",
+        stock: 200,
+        imageUrl: "/blanket.png"
+    },
+    {
+        id: "24",
+        name: "Enchanted Forest Puzzle",
+        price: 16.99,
+        description: "A 1000-piece puzzle depicting a whimsical winter forest scene, a fun activity for the whole family during the holidays.",
+        stock: 150,
+        imageUrl: "/puzzle.png"
+    }
 
 ];

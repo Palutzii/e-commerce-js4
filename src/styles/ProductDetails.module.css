@@ -1,5 +1,77 @@
+.contentWrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 3rem;
+    margin-top: 4rem;
+}
+
+.imageContainer {
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
 .productDetailsImage {
     width: 100%;
-    max-width: 500px;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+
+.detailsContainer p {
+    font-size: 20px;
+}
+
+.addBtn {
+    background: #008000;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 8px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.addBtn:hover {
+    background-color: #00a200;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .contentWrapper {
+        grid-template-columns: 1fr 2fr; /* Stack elements for tablet screens */
+        grid-gap: 2rem; /* Adjust gap size */
+    }
+
+    .imageContainer {
+        width: 300px; /* Adjust width to be responsive */
+        height: 300px; /* Adjust height for proper aspect ratio */
+    }
+
+    .detailsContainer p {
+        font-size: 18px; /* Slightly smaller font size for tablet */
+    }
+}
+
+/* Styles for Phone Screens */
+@media (max-width: 767px) {
+    .contentWrapper {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem; /* Further reduce gap size for phones */
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .imageContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .detailsContainer p {
+        font-size: 16px; /* Further reduce font size for phones */
+    }
 }

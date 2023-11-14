@@ -1,4 +1,26 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+}
+
+.title {
+    margin-top: 0;
+    color: #145A32;
+}
+
+@media (max-width: 1024px) and (min-width: 812px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 811px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: 24px;
+    }
 }

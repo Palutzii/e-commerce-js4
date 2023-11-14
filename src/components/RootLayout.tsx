@@ -10,7 +10,11 @@ export default function RootLayout({ children }) {
                     <title>My page title</title>
                 </Head>
                 <Header />
-                <main className={styles.pageWrapper}>{children}</main>
+                <main className={styles.main}>
+                    <div className="site-wrapper">
+                        {children}
+                    </div>
+                </main>
                 <Footer />
             </>
     );

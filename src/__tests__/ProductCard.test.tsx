@@ -2,6 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import ProductCard from "../components/ProductCard";
 import { IProduct } from "../types";
+import {CartProvider} from "../CartContext";
 
 jest.mock('next/link', () => {
     return ({ children }) => {
@@ -16,10 +17,11 @@ describe('ProductCard', () => {
             name: 'Christmas Lights',
             price: 10.00,
             description: 'Bright and colorful lights.',
-            stock: 100
+            stock: 100,
+            imageUrl: '/candles.png'
         };
 
-        render(<ProductCard product={mockProduct} />);
+        render(<CartProvider><ProductCard product={mockProduct} /></CartProvider> );
         expect(screen.getByText('Christmas Lights')).toBeInTheDocument();
         expect(screen.getByText('10€')).toBeInTheDocument();
     });

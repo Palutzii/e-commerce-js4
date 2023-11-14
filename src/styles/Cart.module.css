@@ -3,12 +3,12 @@
     position: absolute;
     display: flex;
     flex-flow: column wrap;
-    right: 0;
-    top: 6rem;
+    right: 3rem;
+    top: 3rem;
     background: white;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 300px;
+    width: 400px;
     z-index: 10;
     color: #333333;
 }
@@ -21,9 +21,9 @@
 .cartPanelItem {
     padding: 0.5rem 1rem;
     border-bottom: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
 }
 
 .cartPanelItemInfo {
@@ -33,6 +33,9 @@
 
 .cartPanelItemBtnContainer {
     display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: flex-end;
 }
 
 .cartPanelTotal {
@@ -41,8 +44,65 @@
     font-weight: bold;
 }
 
-.cartItemImage {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
+
+.cartItemImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list {
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.info {
+    margin: 0;
+}
+
+.increaseBtn,
+.decreaseBtn,
+.removeBtn{
+    background: #008000;
+    border: none;
+    border-radius: 8px;
+    padding: 3px 6px;
+    color: #fff;
+}
+
+.increaseBtn {
+    background-color: #008000;
+}
+
+.increaseBtn:hover {
+    background-color: #009800;
+    cursor: pointer;
+}
+
+.decreaseBtn {
+    background-color: #999;
+}
+
+.decreaseBtn:hover {
+    background-color: #a8a8a8;
+    cursor: pointer;
+}
+
+.removeBtn {
+    background-color: #C0392B;
+}
+
+.removeBtn:hover {
+    background-color: #e04132;
+    cursor: pointer;
+}
+
+

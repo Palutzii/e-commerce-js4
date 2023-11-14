@@ -1,44 +1,92 @@
 .card {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     border: 1px solid #eaeaea;
-    padding: 2rem;
-    margin: 1rem;
-    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-@media (max-width: 600px) {
-    .card {
-        width: 100%;
-        padding: 1rem;
-    }
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-    color: #0070f3;
-    border-color: #0070f3;
+    color: #145A32;
+    border-color: #145A32;
 }
 
 .card h2 {
     margin: 0 0 1rem 0;
-    font-size: 1.5rem;
 }
 
-.card p {
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: 1.5;
+.cardInfo {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 8px;
 }
 
 .productImageContainer {
-    width: 200px;
-    height: 200px;
+    position: relative;
+    width: 150px;
+    height: 100%;
 }
 
 .productImage {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.productTitle {
+    font-size: 18px;
+}
+
+.productBtnContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.addBtn {
+    background: #008000;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 8px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.addBtn:hover {
+    background-color: #00a200;
+    cursor: pointer;
+}
+
+.detailsBtn {
+    font-weight: 600;
+    border: 1px solid #145A32;
+    border-radius: 8px;
+    padding: 5px 8px;
+    color: #145A32;
+}
+
+.detailsBtn:hover {
+    background-color: #145A32;
+    color: #fff;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .card {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .productTitle {
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    .productTitle {
+        font-size: 14px;
+    }
 }

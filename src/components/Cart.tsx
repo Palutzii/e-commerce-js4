@@ -13,23 +13,23 @@ const Cart: React.FC = () => {
     return(
             <div className={styles.cartPanel}>
                 <h2>Shopping Cart</h2>
-                <ul className="shopping-cart-list">
+                <ul className={styles.list}>
                     {items.map((item) => (
                             <li className={styles.cartPanelItem} key={item.id}>
-                                <div>
+                                <div className={styles.imageContainer}>
                                     <img src={item.imageUrl} alt={item.name} className={styles.cartItemImage}/>
                                 </div>
                                 <div className={styles.cartPanelItemInfo}>
-                                    <span>{item.name}</span>
-                                    <span>{item.quantity} x {item.price}€</span>
+                                    <p className={styles.info}>{item.name}</p>
+                                    <p className={styles.info} >{item.quantity} x {item.price}€</p>
                                 </div>
                                 <div className={styles.cartPanelItemBtnContainer}>
-                                    <button onClick={() => increaseQuantity(item.id)} >+</button>
+                                    <button className={styles.increaseBtn} onClick={() => increaseQuantity(item.id)} >+</button>
                                     {item.quantity > 1 && (
-                                            <button onClick={() => decreaseQuantity(item.id)}>-</button>
+                                            <button className={styles.decreaseBtn} onClick={() => decreaseQuantity(item.id)}>-</button>
                                     )}
                                     {item.quantity === 1 && (
-                                            <button onClick={() => removeFromCart(item.id)}>Remove</button>
+                                            <button className={styles.removeBtn} onClick={() => removeFromCart(item.id)}>X</button>
                                     )}
                                 </div>
                             </li>

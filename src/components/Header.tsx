@@ -20,9 +20,6 @@ const Header = () => {
                     <Link href={"/"}>
                         <span className={styles.navItem}>Home</span>
                     </Link>
-                    <Link href={"/products"}>
-                        <span className={styles.navItem}>Products</span>
-                    </Link>
 
                 </nav>
                 <div className={styles.cartIconContainer} onClick={() => setIsCartVisible(!isCartVisible)}>

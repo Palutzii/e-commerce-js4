@@ -17,12 +17,16 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                     <img src={product.imageUrl} alt={product.name} className={styles.productImage}/>
                 </div>
                 <div className={styles.cardInfo}>
-                    <h2>{product.name}</h2>
-                    <p>{product.price}€</p>
-                    <button onClick={() => addToCart(product)} >Add to Cart</button>
-                    <Link href={`/products/${product.id}`}>
-                        View Details
-                    </Link>
+                    <div>
+                        <h2 className={styles.productTitle}>{product.name}</h2>
+                        <p>{product.price}€</p>
+                    </div>
+                    <div className={styles.productBtnContainer}>
+                        <button className={styles.addBtn} onClick={() => addToCart(product)} >Add to Cart</button>
+                        <Link className={styles.detailsBtn} href={`/products/${product.id}`}>
+                            View Details
+                        </Link>
+                    </div>
                 </div>
             </div>
     );
