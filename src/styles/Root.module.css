@@ -1,0 +1,10 @@
+.main {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.pageWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}

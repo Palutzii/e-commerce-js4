@@ -1,0 +1,108 @@
+/* Cart.module.css */
+.cartPanel {
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    right: 3rem;
+    top: 3rem;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 400px;
+    z-index: 10;
+    color: #333333;
+}
+
+.cartPanel h2 {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cartPanelItem {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #eee;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+}
+
+.cartPanelItemInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartPanelItemBtnContainer {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: flex-end;
+}
+
+.cartPanelTotal {
+    padding: 1rem;
+    text-align: right;
+    font-weight: bold;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cartItemImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list {
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.info {
+    margin: 0;
+}
+
+.increaseBtn,
+.decreaseBtn,
+.removeBtn{
+    background: #008000;
+    border: none;
+    border-radius: 8px;
+    padding: 3px 6px;
+    color: #fff;
+}
+
+.increaseBtn {
+    background-color: #008000;
+}
+
+.increaseBtn:hover {
+    background-color: #009800;
+    cursor: pointer;
+}
+
+.decreaseBtn {
+    background-color: #999;
+}
+
+.decreaseBtn:hover {
+    background-color: #a8a8a8;
+    cursor: pointer;
+}
+
+.removeBtn {
+    background-color: #C0392B;
+}
+
+.removeBtn:hover {
+    background-color: #e04132;
+    cursor: pointer;
+}
+
+
